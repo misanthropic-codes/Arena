@@ -10,13 +10,26 @@ import ContactForm from "../components/Contacts";
 export default function Page() {
   return <div>
     <Navbar />
-    <Hero />
-    <About />
-    <Brand />
-    <Services />
-    <ProjectsSection />
-    <ContactForm />
-
+    <main>
+        <section id="home">
+          <Hero />
+        </section>
+        <section id="about">
+          <About />
+        </section>
+        <section id="brands">
+          <Brand />
+        </section>
+        <section id="services">
+          <Services />
+        </section>
+        <section id="projects">
+          <ProjectsSection />
+        </section>
+        <section id="contact">
+          <ContactForm />
+        </section>
+      </main>
    
   </div>;
 }
