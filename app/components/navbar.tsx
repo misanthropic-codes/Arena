@@ -13,7 +13,7 @@ const Navbar = () => {
   }
 
   const navLinks: NavLink[] = [
-    { name: 'Home', id: 'home', type: 'scroll' },
+    { name: 'Home', id: '/', type: 'link' },
     { name: 'About', id: 'about', type: 'scroll' },
     { name: 'Services', id: 'services', type: 'scroll' },
     { name: 'Gallery', id: '/Gallery', type: 'link' },
