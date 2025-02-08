@@ -1,5 +1,8 @@
+
+"use client";
 import React from "react";
 import Gallery from "./Gallery";
+import Navbar from "@/app/components/navbar";
 
 const App: React.FC = () => {
   const imageArray = [
@@ -24,12 +27,15 @@ const App: React.FC = () => {
   ];
 
   return (
-    <div className="bg-[#FFFFF6] min-h-screen p-8">
-      <h1 className="text-4xl font-bold mb-8 text-center text-[#4C8212]">Gallery</h1>
-      <div className="py-4">
-        <Gallery images={imageArray} />
+    <>
+      <Navbar />
+      <div className="bg-[#FFFFF6] min-h-screen p-8">
+        <h1 className="text-4xl font-bold mb-8 text-center text-[#4C8212]">Gallery</h1>
+        <div className="py-4">
+          <Gallery images={imageArray} />
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 

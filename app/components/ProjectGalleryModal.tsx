@@ -22,32 +22,26 @@ const ProjectGalleryModal: React.FC<ProjectGalleryModalProps> = ({ isOpen, onClo
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center">
-      {/* Backdrop */}
       <div 
         className="fixed inset-0 bg-black/70 backdrop-blur-sm"
         onClick={onClose}
       />
 
-      {/* Modal Content */}
-      <div className="relative z-50 w-full max-w-5xl p-4 mx-4">
-        {/* Close Button */}
+      <div className="relative z-50 w-full max-w-6xl mx-4">
         <button
           onClick={onClose}
-          className="absolute right-6 top-6 z-50 p-2 bg-white/10 hover:bg-white/20 rounded-full transition-colors"
+          className="absolute right-4 top-4 z-50 p-2 bg-white/10 hover:bg-white/20 rounded-full transition-colors"
         >
           <X className="w-6 h-6 text-white" />
         </button>
 
-        {/* Gallery Container */}
-        <div className="relative aspect-video bg-black rounded-lg overflow-hidden">
-          {/* Current Image */}
+        <div className="relative aspect-[16/9] bg-black rounded-lg overflow-hidden">
           <img
             src={images[currentIndex]}
-            alt={`Project image ${currentIndex + 1}`}
+            alt={`Gallery image ${currentIndex + 1}`}
             className="w-full h-full object-contain"
           />
 
-          {/* Navigation Buttons */}
           <button
             onClick={handlePrevious}
             className="absolute left-4 top-1/2 -translate-y-1/2 p-2 bg-black/50 hover:bg-black/70 rounded-full transition-colors"
@@ -62,14 +56,12 @@ const ProjectGalleryModal: React.FC<ProjectGalleryModalProps> = ({ isOpen, onClo
             <ChevronRight className="w-6 h-6 text-white" />
           </button>
 
-          {/* Image Counter */}
           <div className="absolute bottom-4 left-1/2 -translate-x-1/2 px-4 py-2 bg-black/50 rounded-full text-white text-sm">
             {currentIndex + 1} / {images.length}
           </div>
         </div>
 
-        {/* Thumbnail Strip */}
-        <div className="mt-4 flex gap-2 overflow-x-auto px-2 py-4 rounded-lg bg-black/30">
+        <div className="mt-4 flex gap-2 overflow-x-auto pb-2">
           {images.map((image, index) => (
             <button
               key={index}

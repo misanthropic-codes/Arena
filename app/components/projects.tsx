@@ -14,7 +14,19 @@ const projects = [
 const galleryImages = [
   '/images/qubaa-school.png',
   '/images/tartan-flooring.png',
-  // Add more image URLs here
+  '/images/qubaa-school.png',
+  '/Gallery/image1.png',
+  '/Gallery/image2.png',
+  '/Gallery/image3.png',
+  '/Gallery/image4.png',
+  '/Gallery/image5.png',
+  '/Gallery/image6.png',
+  '/Gallery/image7.png',
+  '/Gallery/image8.png',
+  '/Gallery/image9.png',
+  '/Gallery/image10.png',
+  '/Gallery/image11.png',
+  '/Gallery/image12.png',
 ];
 
 const Projects = () => {
